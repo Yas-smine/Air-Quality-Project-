@@ -1,0 +1,65 @@
+Dataset Column Description
+
+This dataset contains hourly air quality measurements collected using gas sensors and meteorological instruments. Each row represents air conditions recorded at a specific date and time.
+
+📅 Temporal Columns
+
+- Date
+The date when the measurement was recorded (DD/MM/YYYY).
+
+- Time
+The time of measurement in hourly intervals (HH.MM.SS).
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🌫️ Pollutant Concentrations (Ground Truth)
+
+- CO(GT)
+Ground truth concentration of Carbon Monoxide (CO) measured in mg/m³.
+This pollutant is commonly used to assess air quality and was used to define air quality levels in this project.
+
+- NMHC(GT)
+Ground truth concentration of Non-Methane Hydrocarbons (NMHC) in µg/m³.
+
+- C6H6(GT)
+Ground truth concentration of Benzene (C₆H₆) in µg/m³.
+Benzene is a harmful pollutant associated with traffic and industrial emissions.
+
+- NOx(GT)
+Ground truth concentration of Nitrogen Oxides (NOx) in ppb.
+
+- NO2(GT)
+Ground truth concentration of Nitrogen Dioxide (NO₂) in µg/m³.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🧪 Sensor Measurements
+
+These columns represent responses from chemical sensors. They do not measure pollutants directly, but provide signals correlated with pollutant concentrations.
+
+- PT08.S1(CO)
+Sensor response related to Carbon Monoxide concentration.
+
+- PT08.S2(NMHC)
+Sensor response related to Non-Methane Hydrocarbons.
+
+- PT08.S3(NOx)
+Sensor response related to Nitrogen Oxides.
+
+- PT08.S4(NO2)
+Sensor response related to Nitrogen Dioxide.
+
+- PT08.S5(O3)
+Sensor response related to Ozone (O₃).
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🌡️ Meteorological Variables
+
+- T
+Temperature in degrees Celsius (°C).
+
+- RH
+Relative Humidity expressed as a percentage (%).
+
+- AH
+Absolute Humidity expressed in g/m³.
+
+These variables influence sensor behavior and pollutant dispersion, making them important features for modeling.
